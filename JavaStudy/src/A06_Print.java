@@ -28,7 +28,6 @@ public class A06_Print {
 	 */
 	
 	public static void main(String[] args) {
-		
 		// 소문자로 시작하는 타입들 : 기본형 타입
 		// 대문자로 시작하는 타입들 : 참조형 타입(String, Scanner, Random 등)
 		
@@ -45,15 +44,15 @@ public class A06_Print {
 		System.out.printf("%d년 %d월 %d일 %d:%d:%d\n", 
 							year, month, day, hour, minute, second, millisecond);
 		
-		System.out.printf("15를 10진수로 표현하면? %d\n", 15);
-		System.out.printf("15를 8진수로 표현하면? %o\n", 15);
-		System.out.printf("15를 16진수 소문자로 표현하면? %x\n", 15);
-		System.out.printf("15를 16진수 대문자로 표현하면? %X\n", 15);
+		System.out.printf("15를 10진수로 표현하면? %d\n", 15); // 15를 10진수로 표현하면? 15
+		System.out.printf("15를 8진수로 표현하면? %o\n", 15); // 15를 8진수로 표현하면? 17
+		System.out.printf("15를 16진수 소문자로 표현하면? %x\n", 15); // 15를 16진수 소문자로 표현하면? f
+		System.out.printf("15를 16진수 대문자로 표현하면? %X\n", 15); // 15를 16진수 대문자로 표현하면? F
 		
-		System.out.printf("%f\n", 12.12345);
-		System.out.printf("%s\n", "문자열");
-		System.out.printf("%c등급\n", 'A');
-		System.out.printf("%d%%\n", 50);
+		System.out.printf("%f\n", 12.12345); // 12.123450
+		System.out.printf("%s\n", "문자열"); // 문자열
+		System.out.printf("%c등급\n", 'A'); // A등급
+		System.out.printf("%d%%\n", 50); // 50%
 		
 		System.out.printf("%9s%9s%9s%9s\n", "alice", "chloe", "erin", "jade");
 		System.out.printf("%9d%9d%9d%9d\n", 10, 9033, 1285, 8818);

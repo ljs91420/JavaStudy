@@ -27,7 +27,6 @@ import java.util.Scanner;
 public class B00_Scanner {
 
 	public static void main(String[] args) {
-		
 		// 새 스캐너 생성과 동시에 어디에서 입력을 받을지 설정
 		Scanner sc = new Scanner(System.in);
 		

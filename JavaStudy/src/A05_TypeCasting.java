@@ -13,7 +13,6 @@ public class A05_TypeCasting {
 	 */
 	
 	public static void main(String[] args) {
-		
 		// 작은 타입 값이 큰 타입에 들어갈 때는 별도의 조치 없이도 타입이 변한다.
 		byte b1 = 127;
 		
@@ -25,14 +24,14 @@ public class A05_TypeCasting {
 		int num = 128;
 		byte bnum = (byte)num;
 		
-		System.out.println(bnum);
+		System.out.println(bnum); // -128
 		
 		double d1 = 123.1234565654;
 		float f1 = (float)d1;
 		int num2 = (int)d1;
 		
-		System.out.println(f1);
-		System.out.println(num2);
+		System.out.println(f1); // 123.12346
+		System.out.println(num2); // 123
 		
 		// 같은 2byte이지만 서로 강제 타입 캐스팅이 필요한 관계
 		short snum = 333;
@@ -45,24 +44,24 @@ public class A05_TypeCasting {
 		short snum2 = (short)ch1;
 		
 		System.out.println(ch2);
-		System.out.println(snum2);
+		System.out.println(snum2); // -17387
 		
 		// 문자의 코드를 보고 싶은 경우
-		System.out.println((int)'가');
+		System.out.println((int)'가'); // 44032
 		
 		// 해당 숫자에 해당하는 문자가 무엇인지 보고 싶은 경우
-		System.out.println((char)65);
-		System.out.println((char)66);
-		System.out.println((char)67);
+		System.out.println((char)65); // A
+		System.out.println((char)66); // B
+		System.out.println((char)67); // C
 		
 		// 반올림
-		System.out.println(Math.round(123.555));
+		System.out.println(Math.round(123.555)); // 124
 		
-		System.out.println(123.123456 * 10000);
-		System.out.println(Math.round(123.123456 * 10000));
-		System.out.println(Math.round(123.123456 * 10000) / 10000.0);
-		
-		System.out.println(40 / 7);
-		System.out.println(40 / 7.0);
+		System.out.println(123.123456 * 10000); // 1231234.56
+		System.out.println(Math.round(123.123456 * 10000)); // 1231235
+		System.out.println(Math.round(123.123456 * 10000) / 10000.0); // 123.1235
+
+		System.out.println(40 / 7); // 5
+		System.out.println(40 / 7.0); // 5.714285714285714
 	}
 }

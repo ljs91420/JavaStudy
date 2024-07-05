@@ -117,36 +117,34 @@ public class C00_Function {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		rabbit();
 		printNumbers();
-		plusNumbers(9, 16);
-		plusNumbers(25, 3);
+		plusNumbers(9, 16); // 25
+		plusNumbers(25, 3); // 28
 		repeatNumbers(9, 10);
 		repeatNumbers(13, 3);
 		printGugudan(3);
-		plusAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-		plusAll(1, 5, 10);
-		plusAll();
-		plus1(30);
+		plusAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); // 전달한 모든 숫자의 합은 55입니다.
+		plusAll(1, 5, 10); // 전달한 모든 숫자의 합은 16입니다.
+		plusAll(); // 전달한 모든 숫자의 합은 0입니다.
+		plus1(30); // 31
 		
 		int result = plus2(1);
 		int result2 = plus2(3);
 		// int result3 = plus1(5); // 불가능
 		
-		System.out.println(result);
-		System.out.println(result2);
-		System.out.println(plus2(15));
+		System.out.println(result); // 3
+		System.out.println(result2); // 5
+		System.out.println(plus2(15)); // 17
 		// System.out.println(plus1(15)); // 불가능
 		
-		System.out.println("모두 짝수? " + allEven(new int[] {2, 4, 6, 8}));
-		System.out.println("모두 짝수? " + allEven(new int[] {2, 4, 3, 6}));
+		System.out.println("모두 짝수? " + allEven(new int[] {2, 4, 6, 8})); // 모두 짝수? true
+		System.out.println("모두 짝수? " + allEven(new int[] {2, 4, 3, 6})); // 모두 짝수? false
 		
-		System.out.println(getBasketQty(123, 10));
-		System.out.println(getBasketQty2(123, 10));
+		System.out.println(getBasketQty(123, 10)); // 13
+		System.out.println(getBasketQty2(123, 10)); // 13
 		
-		System.out.println("프로그램이 끝났습니다.");
+		System.out.println("프로그램이 끝났습니다."); // 프로그램이 끝났습니다.
 	}
 
 }

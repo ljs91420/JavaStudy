@@ -2,8 +2,6 @@
 public class B10_InnerLoop {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		// 반복문 내부에 반복문 사용하기
 		
 		/*

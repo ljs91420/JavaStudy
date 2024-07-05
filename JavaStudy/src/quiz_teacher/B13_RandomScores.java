@@ -3,8 +3,6 @@ package quiz_teacher;
 public class B13_RandomScores {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		int[] scores = new int[100];
 		int total = 0, max = 0, min = 100;
 		

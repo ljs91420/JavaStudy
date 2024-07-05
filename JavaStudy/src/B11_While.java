@@ -8,28 +8,23 @@ public class B11_While {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		// 0 ~ 9 (10개)
 		int i = 0;
 		while (i < 10) {
 			System.out.println("Hello!" + i++);
 		}
-		System.out.println();
 		
 		// 1 ~ 10 (10개)
 		i = 0;
 		while (i < 10) {
 			System.out.println("Hello!" + ++i);
 		}
-		System.out.println();
 		
 		// 1 ~ 10 (10개)
 		i = 0;
 		while (i++ < 10) {
 			System.out.println("Hello!" + i);
 		}
-		System.out.println();
 		
 		// 1 ~ 9 (9개) : 직관적이지 않아서 잘 쓰지 않음
 		i = 0;

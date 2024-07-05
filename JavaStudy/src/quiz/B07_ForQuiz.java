@@ -3,8 +3,6 @@ package quiz;
 public class B07_ForQuiz {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		int sum = 0;
 		
 		for (int i = 100; i <= 200; ++i) {
@@ -17,7 +15,7 @@ public class B07_ForQuiz {
 		for (int i = 50; i <= 100; ++i) {
 			sum += i;
 		}
-		System.out.println("총합: " + sum);
+		System.out.println("총합: " + sum); // 총합: 3825
 		System.out.println();
 		
 		int cnt = 0;
@@ -41,7 +39,7 @@ public class B07_ForQuiz {
 		for (int i = 1; i <= 19; ++i) {
 			total *= i;
 		}
-		System.out.println(total);
+		System.out.println(total); // 121645100408832000
 		System.out.println();
 		
 		int cnt2 = 0;
@@ -51,7 +49,7 @@ public class B07_ForQuiz {
 				++cnt2;
 				
 				if (cnt2 == 5) {
-					System.out.println(i);
+					System.out.println(i); // 7749
 				}
 			}
 		}

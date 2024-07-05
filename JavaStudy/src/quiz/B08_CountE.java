@@ -10,8 +10,6 @@ public class B08_CountE {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		String str;
 		int cnt = 0;
 		

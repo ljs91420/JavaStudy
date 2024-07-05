@@ -8,8 +8,6 @@ public class B14_Array2 {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		int[] arr1 = {1, 2, 3, 4, 5, 6};
 		int[] arr2 = {1, 1, 1, 1, 1, 1, 1, 1, 1};
 		int[] arr3 = new int[8];
@@ -31,16 +29,16 @@ public class B14_Array2 {
 		};
 		
 		// int[]의 값을 인덱스를 통해 꺼내면 int가 나온다.
-		System.out.println(arr1[3]);
+		System.out.println(arr1[3]); // 4
 		
 		// int[][]의 값을 인덱스를 통해 꺼내면 int[]이 나온다.
-		System.out.println(Arrays.toString(arr5[0]));
-		System.out.println(Arrays.toString(arr5[1]));
-		System.out.println(Arrays.toString(arr5[2]));
+		System.out.println(Arrays.toString(arr5[0])); // [1, 2, 3]
+		System.out.println(Arrays.toString(arr5[1])); // [3, 3, 3, 3]
+		System.out.println(Arrays.toString(arr5[2])); // [5, 5, 5, 1]
 		
-		System.out.println(arr5[0][2]);
-		System.out.println(arr5[3][2]);
-		System.out.println(arr5[3][5]);
+		System.out.println(arr5[0][2]); // 3
+		System.out.println(arr5[3][2]); // 3
+		System.out.println(arr5[3][5]); // 6
 		
 		// 배열의 변수명으로 값을 전달하는 것은 해당 변수명이 가리키고 있는 실체(배열)의 위치를 전달하는 것이다.
 		// 아래 예제에서 javaClass의 실체는 하나이기 때문에 school[0][0]을 변경하면 school[0]과 javaClass가 함께 가리키고 있는 같은 실체를 변경하게 된다.
@@ -55,7 +53,7 @@ public class B14_Array2 {
 		
 		school[0][0] = -5;
 		
-		System.out.println("javaClass[0] = " + javaClass[0]);
+		System.out.println("javaClass[0] = " + javaClass[0]); // javaClass[0] = -5
 		
 		// 배열이 다른 변수와 다른 점
 		// 배열 타입 변수에는 실제 배열의 메모리상 위치(주소값)이 들어있고 인덱스를 통해 해당 주소를 찾아가는 방식을 사용한다.
@@ -67,7 +65,7 @@ public class B14_Array2 {
 		
 		num2 = 99;
 		
-		System.out.println(num1);
+		System.out.println(num1); // 10
 		
 		// 2를 바꿨는데 왜 1이 바뀌지?
 		int[] scores1 = {1, 2, 3, 4, 5};
@@ -75,7 +73,7 @@ public class B14_Array2 {
 		
 		scores2[0] = 99;
 		
-		System.out.println(Arrays.toString(scores1));
+		System.out.println(Arrays.toString(scores1)); // [99, 2, 3, 4, 5]
 		
 		// n차원 배열은 n중 반복문으로 모든 요소를 탐색할 수 있다.
 		char[][] negativeMessages = {

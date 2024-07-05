@@ -14,8 +14,6 @@ public class B01_Import {
 	*/
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		// 우리는 사실 만들었던 다른 클래스를 불러서 사용할 수 있다.
 		A06_Print.main(null);
 		// B00_Scanner.main(null);

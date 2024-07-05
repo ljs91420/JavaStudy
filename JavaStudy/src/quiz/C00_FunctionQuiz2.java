@@ -79,10 +79,9 @@ public class C00_FunctionQuiz2 {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		mixed("안녕하세요");
-		System.out.println(reversed("안녕하세요"));
-		System.out.println(isPalindrome("Level"));
+		System.out.println(reversed("안녕하세요")); // 요세하녕안
+		System.out.println(isPalindrome("Level")); // true
 		System.out.println(Arrays.toString(lotto()));
 	}
 

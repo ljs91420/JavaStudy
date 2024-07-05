@@ -23,8 +23,6 @@ public class B13_Array {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		// int타입 변수 10개를 선언한 것과 같다.(크기 10짜리 int형 배열을 선언한 것과 같다)
 		int[] numbers = new int[10];
 		
@@ -38,8 +36,8 @@ public class B13_Array {
 		numbers[9] = 1000;
 		
 		// 배열의 값 꺼내서 활용하기
-		System.out.println(numbers[0]);
-		System.out.println(numbers[1] + numbers[2]);
+		System.out.println(numbers[0]); // 10
+		System.out.println(numbers[1] + numbers[2]); // 112
 		System.out.println(numbers[3]);
 		
 		// 배열은 for문으로 활용하기 딱 좋게 설계되어 있다.
@@ -51,9 +49,9 @@ public class B13_Array {
 		// 배열은 선언과 동시에 정해진 값으로 초기화를 미리 해둔다.
 		int[] numArr = new int[3];
 		
-		System.out.println(numArr[0]);
-		System.out.println(numArr[1]);
-		System.out.println(numArr[2]);
+		System.out.println(numArr[0]); // 0
+		System.out.println(numArr[1]); // 0
+		System.out.println(numArr[2]); // 0
 		
 		boolean[] passTest = new boolean[10];
 		
@@ -81,8 +79,8 @@ public class B13_Array {
 		// 배열은 그냥 출력하면 내용이 제대로 출력되지 않고 메모리상의 위치가 출력된다.
 		// 예외로 char[]은 문자열 취급을 받아 내용이 출력된다.
 		System.out.println(nums);
-		System.out.println(nums[4]);
-		System.out.println(message);
+		System.out.println(nums[4]); // 9
+		System.out.println(message); // Hello~!
 		System.out.println(urls);
 	}
 

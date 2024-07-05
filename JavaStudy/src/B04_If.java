@@ -13,8 +13,6 @@ public class B04_If {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		int a = 9999;
 		
 		if (a < 15) {
@@ -37,7 +35,7 @@ public class B04_If {
 		
 		System.out.println(num);
 		
-		System.out.println("프로그램이 끝났습니다.");
+		System.out.println("프로그램이 끝났습니다."); // 프로그램이 끝났습니다.
 	}
 
 }

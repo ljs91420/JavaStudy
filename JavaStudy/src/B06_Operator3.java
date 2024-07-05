@@ -25,35 +25,33 @@ public class B06_Operator3 {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		int a = 10;
 		
-		System.out.println(a);
+		System.out.println(a); // 10
 		a = 5;
-		System.out.println(a);
+		System.out.println(a); // 5
 		a = a + 3;
-		System.out.println(a);
+		System.out.println(a); // 8
 		a += 2;
-		System.out.println(a);
+		System.out.println(a); // 10
 		
 		a = 30;
 		
 		a += 3;
-		System.out.println(a);
+		System.out.println(a); // 33
 		a -= 15;
-		System.out.println(a);
+		System.out.println(a); // 18
 		a *= 3;
-		System.out.println(a);
+		System.out.println(a); // 54
 		a /= 7.0;
-		System.out.println(a);
+		System.out.println(a); // 7
 		a %= 2;
-		System.out.println(a);
+		System.out.println(a); // 1
 		
-		System.out.println(a = 22);
-		System.out.println(a += 3);
+		System.out.println(a = 22); // 22
+		System.out.println(a += 3); // 25
 		
-		System.out.println(a);
+		System.out.println(a); // 25
 		
 		boolean everyoneAgree = false;
 		
@@ -63,29 +61,29 @@ public class B06_Operator3 {
 		everyoneAgree &= true;
 		everyoneAgree &= true;
 		
-		System.out.println("모두가 동의했나요? " + everyoneAgree);
+		System.out.println("모두가 동의했나요? " + everyoneAgree); // 모두가 동의했나요? false
 		
 		// 비트 연산
 		int num = 10;
 		num &= 3;
-		System.out.println(num);
+		System.out.println(num); // 2
 		
 		a = 15;
 		
 		a++;
-		System.out.println(a);
+		System.out.println(a); // 16
 		++a;
-		System.out.println(a);
+		System.out.println(a); // 17
 		a--;
-		System.out.println(a);
+		System.out.println(a); // 16
 		--a;
-		System.out.println(a);
+		System.out.println(a); // 15
 		
 		a = 10;
-		System.out.println(a++);
-		System.out.println(a);
-		System.out.println(++a);
-		System.out.println(a);
+		System.out.println(a++); // 10
+		System.out.println(a); // 11
+		System.out.println(++a); // 12
+		System.out.println(a); // 12
 	}
 
 }

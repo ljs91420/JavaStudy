@@ -60,19 +60,17 @@ public class C00_FunctionQuiz {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		System.out.println(isAlphabet('김'));
-		System.out.println(isAlphabet('L'));
-		System.out.println(isMul3(20));
-		System.out.println(isMul3(27));
-		System.out.println(checkEvenOdd(123));
+		System.out.println(isAlphabet('김')); // false
+		System.out.println(isAlphabet('L')); // true
+		System.out.println(isMul3(20)); // false
+		System.out.println(isMul3(27)); // true
+		System.out.println(checkEvenOdd(123)); // 홀수입니다.
 		System.out.println(checkEvenOdd('이')); // 가능은 하지만 의미 없는 짓
-		System.out.println(Arrays.toString(getSubmultiples(20)));
-		System.out.println(isPrime(8));
-		System.out.println(isPrime(9));
-		System.out.println(isPrime(11));
-		printMessages("Hello", 3);
+		System.out.println(Arrays.toString(getSubmultiples(20))); // [1, 2, 4, 5, 10, 20]
+		System.out.println(isPrime(8)); // false
+		System.out.println(isPrime(9)); // false
+		System.out.println(isPrime(11)); // true
+		printMessages("Hello", 3); // HelloHelloHello
 	}
 
 }

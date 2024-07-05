@@ -66,12 +66,10 @@ public class C00_FunctionQuiz2 {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		System.out.println(Arrays.toString(getRandomNumbers(0, 6, 7)));;
 		System.out.println(shuffle("Department Store"));
-		System.out.println(reverse("안녕하세요"));
-		System.out.println(checkPalindrome("Level"));
+		System.out.println(reverse("안녕하세요")); // 요세하녕안
+		System.out.println(checkPalindrome("Level")); // true
 		System.out.println(Arrays.toString(getLottoNumbers()));
 	}
 

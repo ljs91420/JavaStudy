@@ -11,7 +11,6 @@ public class B12_Random {
 	 */
 	
 	public static void main(String[] args) {
-		
 		// 새로운 랜덤 시드 생성(생성 시점에서 모든 숫자가 결정된다)
 		// 랜덤 시드를 생성하면서 원하는 시드 번호를 전달할 수도 있다.
 		// 전달하지 않는 경우 현재 시간이 시드 번호가 된다.

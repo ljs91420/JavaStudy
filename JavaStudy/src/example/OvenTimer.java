@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class OvenTimer {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		Scanner sc = new Scanner(System.in);
 		
 		int hour, minute, timer, finishMinute;

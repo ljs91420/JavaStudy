@@ -3,8 +3,6 @@ package quiz;
 public class B14_Array2Quiz {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		int[][] myArr = {
 				new int[5],
 				new int[7],

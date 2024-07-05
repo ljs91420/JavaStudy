@@ -3,7 +3,6 @@ package quiz;
 public class A03_PersonalInformation {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		String name = "홍길동";
 		// 자원 절약 여부에 따라 결정(보통은 int)
 		byte age = 20;

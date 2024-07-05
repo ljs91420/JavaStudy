@@ -6,8 +6,6 @@ import java.util.Random;
 public class B13_Sort {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Random ran = new Random();
 		
 		int[] numbers = new int[7];

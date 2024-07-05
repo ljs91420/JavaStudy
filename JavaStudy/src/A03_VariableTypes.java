@@ -43,8 +43,6 @@ public class A03_VariableTypes {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		byte max_byte = 127, min_byte = -128;
 		short max_short = 32767, min_short = -32768;
 		// , 대신 _를 사용해 큰 숫자를 보기 편하게 적을 수 있다.
@@ -62,7 +60,7 @@ public class A03_VariableTypes {
 							+ "가장 작은 값은 " + min_int + "입니다.");
 		System.out.println("long 타입에 들어갈 수 있는 가장 큰 값은 " + max_long + "이고, " 
 							+ "가장 작은 값은 " + min_long + "입니다.");
-		System.out.println("" + ch1 + ch2 + ch3 + ch4 + ch5);
+		System.out.println("" + ch1 + ch2 + ch3 + ch4 + ch5); // lunch
 		
 		// 정수 리터럴의 기본 타입은 int
 		// 실수 리터럴의 기본 타입은 double
@@ -72,21 +70,21 @@ public class A03_VariableTypes {
 		float f1 = 123.123F;
 		double d1 = 123.123;
 		
-		System.out.println("평균 점수: " + d1 + "점");
-		System.out.println("평균 몸무게: " + f1 + "kg");
+		System.out.println("평균 점수: " + d1 + "점"); // 평균 점수: 123.123점
+		System.out.println("평균 몸무게: " + f1 + "kg"); // 평균 몸무게: 123.123kg
 		
 		// true, false 대신 1과 0을 사용하는 언어도 있다.
 		boolean pass_exam = true;
 		boolean gunpil = false;
 		boolean late = true;
 		
-		System.out.println("통과 여부: " + pass_exam);
-		System.out.println("군필: " + gunpil);
-		System.out.println("지각 여부: " + late);
+		System.out.println("통과 여부: " + pass_exam); // 통과 여부: true
+		System.out.println("군필: " + gunpil); // 군필: false
+		System.out.println("지각 여부: " + late); // 지각 여부: true
 		
 		String text = "My name is Lee Jae Sang.";
 		
-		System.out.println(text);
+		System.out.println(text); // My name is Lee Jae Sang.
 	}
 
 }

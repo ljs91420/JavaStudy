@@ -8,8 +8,6 @@ public class B05_Switch {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		int a =13;
 		
 		switch (a) {

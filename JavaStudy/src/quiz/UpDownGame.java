@@ -20,8 +20,6 @@ public class UpDownGame {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		Random rnd = new Random();
 		Scanner sc = new Scanner(System.in);
 		

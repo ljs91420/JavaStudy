@@ -3,7 +3,6 @@ package quiz;
 public class A01_Membership {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println("            #### 회비 정보 ####");
 		System.out.println("=========================================");
 		System.out.println("이름\t나이\t전화번호\t\t회비");

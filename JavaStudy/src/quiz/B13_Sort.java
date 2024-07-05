@@ -10,8 +10,6 @@ public class B13_Sort {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		int[] nums = new int[30];
 		int[] sorted = new int[30];
 		int len = nums.length, sLen = sorted.length, tmp;

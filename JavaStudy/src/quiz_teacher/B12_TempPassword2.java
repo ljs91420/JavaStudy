@@ -3,8 +3,6 @@ package quiz_teacher;
 public class B12_TempPassword2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		String charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+,-./";
 		String pw;
 		

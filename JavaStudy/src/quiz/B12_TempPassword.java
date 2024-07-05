@@ -9,8 +9,6 @@ public class B12_TempPassword {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		Random rnd = new Random();
 		
 		String pw;

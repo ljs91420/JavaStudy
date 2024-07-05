@@ -14,22 +14,20 @@ public class B08_CharAt {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		String str = "가나다라";
 		
 		char ch = str.charAt(3);
 		// ch = str.charAt(4); // 에러
 		
-		System.out.println(str.charAt(0));
-		System.out.println(str.charAt(1));
-		System.out.println(ch);
-		System.out.println("ABCDEFGH".charAt(5));
+		System.out.println(str.charAt(0)); // 가
+		System.out.println(str.charAt(1)); // 나
+		System.out.println(ch); // 라
+		System.out.println("ABCDEFGH".charAt(5)); // F
 		
 		String str2 = "I have a delicious apple";
 		
-		System.out.println(str2.length());
-		System.out.println("마지막 글자: " + str2.charAt(str2.length() - 1));
+		System.out.println(str2.length()); // 24
+		System.out.println("마지막 글자: " + str2.charAt(str2.length() - 1)); // 마지막 글자: e
 		
 		for (int i = 0; i < str2.length(); ++i) {
 			System.out.println(str2.charAt(i));

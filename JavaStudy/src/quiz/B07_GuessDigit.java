@@ -9,8 +9,6 @@ public class B07_GuessDigit {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		int input, digits = 1;
 		
 		Scanner sc = new Scanner(System.in);

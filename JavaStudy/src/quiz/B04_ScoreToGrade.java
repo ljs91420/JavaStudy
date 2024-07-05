@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class B04_ScoreToGrade {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		// Ctrl + Shift + O : import
 		Scanner sc = new Scanner(System.in); 
 		

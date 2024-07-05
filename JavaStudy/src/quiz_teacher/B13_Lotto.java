@@ -5,8 +5,6 @@ import java.util.Arrays;
 public class B13_Lotto {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		int n, currIndex, buyCnt, winCnt;
 		int[] winNums = new int[7];
 		int[] usrNums = new int[6];
@@ -75,9 +73,9 @@ public class B13_Lotto {
 			}
 			
 			// Arrays.toString(arr) : 배열의 내용을 보기 좋게 문자열로 변환하는 함수
-			System.out.print(buyCnt + "회 구매만에 ");
-			
 			System.out.printf("%s VS %s\n", Arrays.toString(winNums), Arrays.toString(usrNums));
+			
+			System.out.print(buyCnt + "회 구매만에 ");
 			
 			if (winCnt == 6) {
 				if (hasBonus) {

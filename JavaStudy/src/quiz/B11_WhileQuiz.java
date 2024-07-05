@@ -15,13 +15,11 @@ public class B11_WhileQuiz {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		int i = 100, tot = 0, cnt = 0;
 		
 		while (i <= 200) {
 			if (i % 13 == 0) {
-				System.out.print(i + " ");
+				System.out.print(i + " "); // 104 117 130 143 156 169 182 195
 			}
 			++i;
 		}
@@ -32,7 +30,7 @@ public class B11_WhileQuiz {
 		while (i <= 100) {
 			tot += i++;
 		}
-		System.out.println(tot);
+		System.out.println(tot); // 3825
 		
 		i = 1;
 		
@@ -54,14 +52,14 @@ public class B11_WhileQuiz {
 		while (i <= 19) {
 			tot2 *= i++;
 		}
-		System.out.println(tot2);
+		System.out.println(tot2); // 121645100408832000
 		
 		i = 8999;
 		cnt = 0;
 		
 		while (i >= 4999) {	
 			if (i % 287 == 0 && ++cnt == 5) {
-				System.out.println(i);
+				System.out.println(i); // 7749
 				break;
 			}
 			--i;

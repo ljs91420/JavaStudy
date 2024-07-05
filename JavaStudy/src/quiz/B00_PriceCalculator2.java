@@ -16,17 +16,15 @@ public class B00_PriceCalculator2 {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		int unitPrice1 = 2300;
 		int unitPrice2 = 2800;
 		int unitPrice3 = 3300;
 		int unitPrice4 = 3500;
 		
-		System.out.printf("1번 음료 : %d원\n", unitPrice1);
-		System.out.printf("2번 음료 : %d원\n", unitPrice2);
-		System.out.printf("3번 음료 : %d원\n", unitPrice3);
-		System.out.printf("4번 음료 : %d원\n", unitPrice4);
+		System.out.printf("1번 음료 : %d원\n", unitPrice1); // 1번 음료 : 2300원
+		System.out.printf("2번 음료 : %d원\n", unitPrice2); // 2번 음료 : 2800원
+		System.out.printf("3번 음료 : %d원\n", unitPrice3); // 3번 음료 : 3300원
+		System.out.printf("4번 음료 : %d원\n", unitPrice4); // 4번 음료 : 3500원
 		
 		Scanner sc = new Scanner(System.in);
 		
