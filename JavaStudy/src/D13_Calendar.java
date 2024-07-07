@@ -36,13 +36,13 @@ public class D13_Calendar {
 		// 요일을 알 수 있지만 번호로 나와서 알기 힘들다.
 		System.out.println("이번주의 몇 번째 날인가(요일)? " + now.get(Calendar.DAY_OF_WEEK));
 		// 요일에 대한 상수도 캘린더에 정의되어 있다.
-		System.out.println("일요일: " + Calendar.SUNDAY);
-		System.out.println("월요일: " + Calendar.MONDAY);
-		System.out.println("화요일: " + Calendar.TUESDAY);
-		System.out.println("수요일: " + Calendar.WEDNESDAY);
-		System.out.println("목요일: " + Calendar.THURSDAY);
-		System.out.println("금요일: " + Calendar.FRIDAY);
-		System.out.println("토요일: " + Calendar.SATURDAY);
+		System.out.println("일요일: " + Calendar.SUNDAY); // 일요일: 1
+		System.out.println("월요일: " + Calendar.MONDAY); // 월요일: 2
+		System.out.println("화요일: " + Calendar.TUESDAY); // 화요일: 3
+		System.out.println("수요일: " + Calendar.WEDNESDAY); // 수요일: 4
+		System.out.println("목요일: " + Calendar.THURSDAY); // 목요일: 5
+		System.out.println("금요일: " + Calendar.FRIDAY); // 금요일: 6
+		System.out.println("토요일: " + Calendar.SATURDAY); // 토요일: 7
 		
 		System.out.println("12시: " + now.get(Calendar.HOUR));
 		System.out.println("24시: " + now.get(Calendar.HOUR_OF_DAY));
@@ -99,6 +99,6 @@ public class D13_Calendar {
 		cal1.set(2024, 0, 1);
 		cal2.set(2024, 0, 1);
 		
-		System.out.println(cal1.equals(cal2));
+		System.out.println(cal1.equals(cal2)); // true
 	}
 }

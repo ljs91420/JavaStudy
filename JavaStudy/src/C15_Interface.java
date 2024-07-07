@@ -68,7 +68,6 @@ class PirateBarrel implements Shufflable {
 	
 	@Override
 	public void shuffle() {
-		// TODO Auto-generated method stub
 		
 	}
 }
@@ -76,7 +75,6 @@ class PirateBarrel implements Shufflable {
 class OneCardGame implements Shufflable {
 	@Override
 	public void shuffle() {
-		// TODO Auto-generated method stub
 		
 	}
 }

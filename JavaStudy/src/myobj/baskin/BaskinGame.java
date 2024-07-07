@@ -8,10 +8,8 @@ public class BaskinGame {
 	// 초기화하지 않은 인스턴스 변수는 배열처럼 기본값을 갖고 있다.
 	int currentNum;
 	
-	// 기본 생성자 : 매개변수가 아무것도 없는 생성자
-	
-	// 매개변수가 있으므로 기본 생성자 아님
 	public BaskinGame(int lastNum) {
+		this.playerNum = playerNum;
 		this.lastNum = lastNum;
 	}
 	

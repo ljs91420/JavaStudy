@@ -67,7 +67,7 @@ public class ProgrammingStudent {
 	}
 	
 	public static void main(String[] args) {
-		for (int i = 0; i < 3; ++i) {
+		for (int i = 0; i < 100; ++i) {
 			ProgrammingStudent stu = new ProgrammingStudent();
 			
 			ProgrammingStudent.printDetail(stu);

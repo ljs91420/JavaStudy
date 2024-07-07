@@ -28,7 +28,7 @@ public class D12_Date {
 		
 		// 원하는 날짜로 시간을 생성하는 기능이 있지만 더 이상의 업데이트를 해주지 않는다.(지원 중단)
 		Date d3 = new Date(2002, 5, 5);
-		System.out.println(d3);
+		System.out.println(d3); // Thu Jun 05 00:00:00 KST 3902
 		
 		now = new Date();
 		Date onceUponATime = new Date(2000);
@@ -36,12 +36,12 @@ public class D12_Date {
 		// date.after(anotherDate)
 		// date.before(anotherDate)
 		// : 두 시점을 비교해 어떤 시점이 더 뒤인지 알 수 있다.
-		System.out.println("now가 onceUponATime보다 이후의 시점이니? " + now.after(onceUponATime));
-		System.out.println("now가 onceUponATime보다 이후의 시점이니? " + now.before(onceUponATime));
+		System.out.println("now가 onceUponATime보다 이후의 시점이니? " + now.after(onceUponATime)); // now가 onceUponATime보다 이후의 시점이니? true
+		System.out.println("now가 onceUponATime보다 이전의 시점이니? " + now.before(onceUponATime)); // now가 onceUponATime보다 이전의 시점이니? false
 		
 		// getTime() : 인스턴스로부터 해당 시간의 유닉스 타임을 꺼낼 수 있다.
 		System.out.println(now.getTime());
-		System.out.println(onceUponATime.getTime());
+		System.out.println(onceUponATime.getTime()); // 2000
 		
 		// setTime(unixTime) : 유닉스 타임을 전달해 인스턴스의 시간을 변경한다.
 		now.setTime(10000000L);

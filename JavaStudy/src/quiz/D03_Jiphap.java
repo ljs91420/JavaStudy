@@ -42,6 +42,6 @@ public class D03_Jiphap {
 		jiphap2.add(4);
 		jiphap2.add(5);
 		
-		System.out.println(sum(jiphap1, jiphap2));
+		System.out.println(sum(jiphap1, jiphap2)); // [1, 2, 3, 4, 5]
 	}
 }

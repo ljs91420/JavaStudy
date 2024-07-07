@@ -19,11 +19,9 @@ public class C04_Static {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		// 인스턴스를 하나도 생성하지 않은 시점에도 static 자원을 활용할 수 있다.
-		System.out.println(TrumphCard.cardWidth);
-		System.out.println(TrumphCard.cardHeight);
+		System.out.println(TrumphCard.cardWidth); // 80
+		System.out.println(TrumphCard.cardHeight); // 150
 		
 		TrumphCard spadeA = new TrumphCard(0, 0);
 		TrumphCard spade2 = new TrumphCard(1, 0);
@@ -31,9 +29,9 @@ public class C04_Static {
 		
 		spadeA.cardWidth = 5000;
 		
-		System.out.println("스페이드A의 너비: " + spadeA.cardWidth);
-		System.out.println("스페이드2의 너비: " + spade2.cardWidth);
-		System.out.println("하트10의 너비: " + heart10.cardWidth);
+		System.out.println("스페이드A의 너비: " + spadeA.cardWidth); // 스페이드A의 너비: 5000
+		System.out.println("스페이드2의 너비: " + spade2.cardWidth); // 스페이드2의 너비: 5000
+		System.out.println("하트10의 너비: " + heart10.cardWidth); // 하트10의 너비: 5000
 	}
 
 }
@@ -49,8 +47,6 @@ class TrumphCard {
 	static int cardHeight = 150;
 	
 	public TrumphCard(int rank, int suit) {
-		// TODO Auto-generated constructor stub
-		
 		this.rank = rank;
 		this.suit = suit;
 	}

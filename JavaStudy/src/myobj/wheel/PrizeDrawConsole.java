@@ -14,7 +14,7 @@ public class PrizeDrawConsole {
 		wheel.modifyDegree(2, 1000);
 		wheel.modifyDegree(2, 356);
 		
-		for (int i = 0; i < 100; ++i) {
+		for (int i = 0; i < 10; ++i) {
 			Prize prize = wheel.draw();
 			
 			if (prize == null) {
@@ -22,7 +22,6 @@ public class PrizeDrawConsole {
 			}
 			
 			if (prize.getQty() != 0) {
-				prize.minusQty();
 				System.out.printf("[%s]를 뽑았습니다! (남은 수량: %d, 당첨확률: %.2f%%)\n",
 						prize, prize.getQty(), prize.getDegree() / 360.0 * 100);
 			} else {

@@ -38,19 +38,19 @@ public class C10_InnerClass {
 		C10_InnerClass.Bus bus1 = inner1.new Bus();
 		C10_InnerClass.Bus bus2 = inner2.new Bus();
 		
-		System.out.println(bus1.num);
-		System.out.println(bus2.num);
+		System.out.println(bus1.num); // 13
+		System.out.println(bus2.num); // 55
 		
 		bus1 = bus2;
 		
 		// 클래스 내부의 스태틱 클래스는
 		// 바깥 클래스의 인스턴스 없이도 바로 사용할 수 있다.
 		C10_InnerClass.Subway subway = new C10_InnerClass.Subway();
-		System.out.println(subway.line);
+		System.out.println(subway.line); // 8
 		
 		// 예제
 		Candy candy = new CandyFactory(1, 0).getCandy();
-		System.out.println(candy.flavor);
+		System.out.println(candy.flavor); // 딸기
 	}
 }
 

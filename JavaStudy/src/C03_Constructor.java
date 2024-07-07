@@ -14,12 +14,10 @@ public class C03_Constructor {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		myobj.Book b1 = new myobj.Book();
 		
-		System.out.println(b1.page);
-		System.out.println(b1.totalPage);
+		System.out.println(b1.page); // 0
+		System.out.println(b1.totalPage); // 0
 		
 		Apple a1 = new Apple();
 		Apple a2 = new Apple();

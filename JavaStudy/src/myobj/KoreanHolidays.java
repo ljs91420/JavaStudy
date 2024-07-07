@@ -2,7 +2,6 @@ package myobj;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -31,7 +30,7 @@ public class KoreanHolidays {
 		신정.set(2024, 0, 1);
 		구정1.set(2024, 1, 9);
 		구정2.set(2024, 1, 12);
-		삼일절.set(2024, 2, 1);
+		삼일절.set(2024, 2, 3);
 		총선.set(2024, 3, 10);
 		어린이날.set(2024, 4, 6);
 		석가탄신일.set(2024, 4, 15);
@@ -61,22 +60,20 @@ public class KoreanHolidays {
 		holidays2024.add(성탄절);
 		
 		HOLIDAYS.put(2024, holidays2024);
-		
-		HOLIDAYS.put(2025, new ArrayList<>());
 	}
 	
-	public static boolean isHoliday(Calendar day) {
+	public static boolean checkHoliday(Calendar day) {
 		int year = day.get(Calendar.YEAR);
-		int mon1 = day.get(Calendar.MONTH);
+		int month1 = day.get(Calendar.MONTH);
 		int date1 = day.get(Calendar.DATE);
 		
 		List<Calendar> holidayList = HOLIDAYS.get(year);
 		
 		for (Calendar holiday : holidayList) {
-			int mon2 = holiday.get(Calendar.MONTH);
+			int month2 = holiday.get(Calendar.MONTH);
 			int date2 = holiday.get(Calendar.DATE);
 			
-			if (mon1 == mon2 && date1 == date2) {
+			if (month1 == month2 && date1 == date2) {
 				return true;
 			}
 		}

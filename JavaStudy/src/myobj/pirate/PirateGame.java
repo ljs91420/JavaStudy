@@ -92,7 +92,7 @@ public class PirateGame {
 		
 		int stabResult = -1;
 		
-		while (stabResult != 1) {
+		while (stabResult != LAUNCH_HOLE) {
 			game.print();
 			System.out.print("> ");
 			stabResult = game.stab(sc.nextInt() - 1);

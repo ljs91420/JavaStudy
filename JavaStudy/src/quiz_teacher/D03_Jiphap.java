@@ -22,14 +22,26 @@ public class D03_Jiphap {
 	}
 	
 	public static Set inter(Collection a, Collection b) {
-		a.retainAll(b);
-		Set inter = new HashSet(a);
+//		a.retainAll(b);
+//		Set inter = new HashSet(a);
+		
+		Set inter = new HashSet();
+		
+		inter.addAll(a);
+		inter.retainAll(b);
+		
 		return inter;
 	}
 	
 	public static Set diff(Collection a, Collection b) {
-		a.removeAll(b);
-		Set diff = new HashSet(a);
+//		a.removeAll(b);
+//		Set diff = new HashSet(a);
+		
+		Set diff = new HashSet();
+		
+		diff.addAll(a);
+		diff.removeAll(b);
+		
 		return diff;
 	}
 	
@@ -57,21 +69,28 @@ public class D03_Jiphap {
 		num2.add(4);
 		num2.add(5);
 		
-		System.out.println(num1 + " VS " + num2);
-		System.out.println(snack1 + " VS " + snack2);
+		System.out.println(num1 + " VS " + num2); // [1, 2, 3] VS [2, 3, 4, 5]
+		System.out.println(snack1 + " VS " + snack2); // [초코파이, 웨하스, 쿠크다스] VS [오예스, 포스틱, 쿠크다스]
 		
 		Set unionResult = union(num1, num2);
 		Set unionResult2 = union(snack1, snack2);
 		
-		System.out.println("### 합집합 ###");
-		System.out.println(unionResult);
-		System.out.println(unionResult2);
+		System.out.println("### 합집합 ###"); // ### 합집합 ###
+		System.out.println(unionResult); // [1, 2, 3, 4, 5]
+		System.out.println(unionResult2); // [오예스, 웨하스, 포스틱, 초코파이, 쿠크다스]
 		
 		Set interResult = inter(num1, num2);
 		Set interResult2 = inter(snack1, snack2);
 		
-		System.out.println("### 교집합 ###");
-		System.out.println(interResult);
-		System.out.println(interResult2);
+		System.out.println("### 교집합 ###"); // ### 교집합 ###
+		System.out.println(interResult); // [2, 3]
+		System.out.println(interResult2); // 쿠크다스
+		
+		Set diffResult = diff(num1, num2);
+		Set diffResult2 = diff(snack1, snack2);
+		
+		System.out.println("### 차집합 ###"); // ### 차집합 ###
+		System.out.println(diffResult); // [1]
+		System.out.println(diffResult2); // [웨하스, 초코파이]
 	}
 }

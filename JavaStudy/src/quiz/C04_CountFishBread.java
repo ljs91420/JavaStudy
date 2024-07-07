@@ -19,8 +19,6 @@ public class C04_CountFishBread {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		FishBread[] fb = new FishBread[100];
 		int len = fb.length, redBeanQty = 0, custardCreamQty = 0, mintChocoQty = 0;
 		

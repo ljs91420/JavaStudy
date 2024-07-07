@@ -74,8 +74,8 @@ public class C07_Polymorphism {
 		Wolf wolf1 = new Dog();
 		Wolf wolf2 = new Wolf();
 		
-		System.out.println("wolf1은 강아지인가요? " + (wolf1 instanceof Dog));
-		System.out.println("wolf2는 강아지인가요? " + (wolf2 instanceof Dog));
+		System.out.println("wolf1은 강아지인가요? " + (wolf1 instanceof Dog)); // wolf1은 강아지인가요? true
+		System.out.println("wolf2는 강아지인가요? " + (wolf2 instanceof Dog)); // wolf2는 강아지인가요? false
 		
 		Wolf[] wolves = {
 				new Wolf(), 

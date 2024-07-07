@@ -1,7 +1,5 @@
 package quiz;
 
-import java.util.Calendar;
-
 public class D14_EventDays {
 
 	/*
@@ -14,9 +12,4 @@ public class D14_EventDays {
 		※ 이벤트 날짜가 겹치는 날에는 모든 이벤트를 출력해줘야 한다.
 	 */
 	
-	public static void main(String[] args) {
-		Calendar eventDays = Calendar.getInstance();
-		
-		
-	}
 }

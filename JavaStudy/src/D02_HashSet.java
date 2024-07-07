@@ -34,7 +34,7 @@ public class D02_HashSet {
 		animals.add("cat");
 		animals.add("cat");
 		
-		System.out.println(animals);
+		System.out.println(animals); // [zebra, camel, cat, dog]
 		
 		// Set은 index가 없어서 get()으로 하나씩 꺼내는 것은 불가능하다.
 		// 반복문을 활용해서 모두 꺼내야 한다.
@@ -53,11 +53,11 @@ public class D02_HashSet {
 		
 		// remove(value) : index가 없기 때문에 값으로만 삭제할 수 있다.
 		boolean result = animals.remove("cat");
-		System.out.println("삭제 여부: " + result);
-		System.out.println(animals);
+		System.out.println("삭제 여부: " + result); // 삭제 여부: true
+		System.out.println(animals); // [zebra, camel, dog]
 		
 		// contains(value) : 해당 값이 포함되어 있으면 true
-		System.out.println("animals에 lion이 있나요? " + animals.contains("lion"));
+		System.out.println("animals에 lion이 있나요? " + animals.contains("lion")); // animals에 lion이 있나요? false
 		
 		ArrayList<String> otherZoo = new ArrayList<>();
 		
@@ -68,19 +68,19 @@ public class D02_HashSet {
 		otherZoo.add("코끼리");
 		otherZoo.add("코끼리");
 		
-		System.out.println("다른 동물원: " + otherZoo);
+		System.out.println("다른 동물원: " + otherZoo); // 다른 동물원: [악어, 악어, 악어, 기린, 코끼리, 코끼리]
 		
 		// addAll(Collection): 다른 컬렉션의 모든 내용을 더한다.	
 		// removeAll(Collection) : 다른 컬렉션에 있는 모든 내용을 제거한다.
 		// retainAll(Collection) : 두 컬렉션에 모두 포함된 내용만 남긴다.
 		animals.addAll(otherZoo);
 		
-		System.out.println(animals);
+		System.out.println(animals); // [zebra, 코끼리, 기린, camel, 악어, dog]
 		
 		// 컬렉션끼리는 다른 컬렉션으로의 변환이 자유롭다.
 		// (생성자로 변환을 지원해준다.)
 		HashSet<String> set = new HashSet<>(otherZoo);
-		System.out.println(set);
+		System.out.println(set); // [코끼리, 기린, 악어]
 		
 		ArrayList<String> list = new ArrayList<>(animals);
 		
@@ -88,6 +88,6 @@ public class D02_HashSet {
 		list.add("악어");
 		list.add("악어");
 		
-		System.out.println(list);
+		System.out.println(list); // [zebra, 코끼리, 기린, camel, 악어, dog, 악어, 악어, 악어]
 	}
 }

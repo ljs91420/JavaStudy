@@ -33,8 +33,8 @@ public class D01_ArrayListQuiz {
 			}
 		}
 		
-		System.out.println(numbers);
-		System.out.println("남은 개수: " + numbers.size());
+		System.out.println(numbers); // []
+		System.out.println("남은 개수: " + numbers.size()); // 남은 개수: 0
 		
 		// 리스트를 활용해 짝수 리스트와 홀수 리스트를 만들어 처리하기
 		ArrayList<Integer> origin = new ArrayList<>();

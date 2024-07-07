@@ -10,7 +10,7 @@ public class NameGenerator {
 	}
 	
 	public void setFirstNameCandidates(String... firstNameCandidates) {
-		this.lastNameCandidates = firstNameCandidates;
+		this.firstNameCandidates = firstNameCandidates;
 	}
 	
 	// 다른 클래스에서 쓸 필요가 없는 기능들을 private으로 숨겨놓는다.

@@ -21,19 +21,19 @@ public class D11_Regex {
 	
 	public static void main(String[] args) {
 		// Pattern.matches(regex, str) : 문자열이 정규표현식에 해당하는지 검사하는 메서드
-		System.out.println(Pattern.matches("sleep", "sleep"));
+		System.out.println(Pattern.matches("sleep", "sleep")); // true
 		
 		// [] : 해당 위치에 허용할 문자를 정의하는 정규표현식 문법
-		System.out.println(Pattern.matches("s[lh]eep", "sleep"));
-		System.out.println(Pattern.matches("s[lh]eep", "sheep"));
-		System.out.println(Pattern.matches("s[lh]eep", "skeep"));
-		System.out.println(Pattern.matches("s[lh]e[ea]p", "sheap"));
-		System.out.println(Pattern.matches("s[lh]e[ea]p", "sleap"));
+		System.out.println(Pattern.matches("s[lh]eep", "sleep")); // true
+		System.out.println(Pattern.matches("s[lh]eep", "sheep")); // true
+		System.out.println(Pattern.matches("s[lh]eep", "skeep")); // false
+		System.out.println(Pattern.matches("s[lh]e[ea]p", "sheap")); // true
+		System.out.println(Pattern.matches("s[lh]e[ea]p", "sleap")); // true
 		
-		System.out.println(Pattern.matches("01[01679]-", "016-"));
+		System.out.println(Pattern.matches("01[01679]-", "016-")); // true
 		
 		// \는 정규표현식에서도 특수한 기능을 지니고 있기 때문에 정규표현식에서 \\가 될 수 있도록 자바 문자열에서는 4개를 적어줘야 한다.
-		System.out.println(Pattern.matches("C:[/\\\\]", "C:\\"));
+		System.out.println(Pattern.matches("C:[/\\\\]", "C:\\")); // true
 		
 		/*
 			# [] 내부에 사용할 수 있는 문법들
@@ -45,14 +45,14 @@ public class D11_Regex {
 			[a-f&&d-i] : 두 조건을 모두 만족하는 경우만 허용(잘 쓰지 않음)
 		 */
 		
-		System.out.println(Pattern.matches("[a-h]at", "hat"));
-		System.out.println(Pattern.matches("[a-h]at", "cat"));
-		System.out.println(Pattern.matches("[a-h]at", "aat"));
-		System.out.println(Pattern.matches("[a-h]at", "Cat"));
-		System.out.println(Pattern.matches("[a-hA-H]at", "Cat"));
-		System.out.println(Pattern.matches("[a-c&&b-d]at", "bat"));
-		System.out.println(Pattern.matches("[a-c&&b-d]at", "cat"));
-		System.out.println(Pattern.matches("[a-c&&b-d]at", "dat"));
+		System.out.println(Pattern.matches("[a-h]at", "hat")); // true
+		System.out.println(Pattern.matches("[a-h]at", "cat")); // true
+		System.out.println(Pattern.matches("[a-h]at", "aat")); // true
+		System.out.println(Pattern.matches("[a-h]at", "Cat")); // false
+		System.out.println(Pattern.matches("[a-hA-H]at", "Cat")); // true
+		System.out.println(Pattern.matches("[a-c&&b-d]at", "bat")); // true
+		System.out.println(Pattern.matches("[a-c&&b-d]at", "cat")); // true
+		System.out.println(Pattern.matches("[a-c&&b-d]at", "dat")); // false
 		
 		/*
 			# 한 번에 여러 문자를 나타낼 수 있는 것들
@@ -66,15 +66,15 @@ public class D11_Regex {
 			\W : \w를 제외한 모든 것을 허용
 		 */
 		
-		System.out.println(Pattern.matches("...p", "skip"));
-		System.out.println(Pattern.matches("...p", "ship"));
-		System.out.println(Pattern.matches("...p", "#!@k"));
-		System.out.println(Pattern.matches("\\...p", ".kip"));
-		System.out.println(Pattern.matches("[.]..p", ".ppp"));
-		System.out.println("공백 : " + Pattern.matches("\\s\\d\\d", " 23"));
-		System.out.println(Pattern.matches("\\d\\d\\d", "12a"));
-		System.out.println(Pattern.matches("\\D\\D", " b"));
-		System.out.println(Pattern.matches("[\\da-z]..", "#ip"));
+		System.out.println(Pattern.matches("...p", "skip")); // true
+		System.out.println(Pattern.matches("...p", "ship")); // true
+		System.out.println(Pattern.matches("...p", "#!@k")); // false
+		System.out.println(Pattern.matches("\\...p", ".kip")); // true
+		System.out.println(Pattern.matches("[.]..p", ".ppp")); // true
+		System.out.println("공백 : " + Pattern.matches("\\s\\d\\d", " 23")); // 공백 : true
+		System.out.println(Pattern.matches("\\d\\d\\d", "12a")); // false
+		System.out.println(Pattern.matches("\\D\\D", " b")); // true
+		System.out.println(Pattern.matches("[\\da-z]..", "#ip")); // false
 		
 		/*
 			# 해당 패턴이 적용될 문자의 개수를 지정하기
@@ -87,30 +87,29 @@ public class D11_Regex {
 				* : * 앞의 패턴이 0번 이상 나와야 한다.
 		 */
 		
-		System.out.println(Pattern.matches("\\d{6}", "12345a"));
-		System.out.println(Pattern.matches("\\d{6,8}", "12345678"));
-		System.out.println(Pattern.matches("\\w{3,}", "ab"));
-		System.out.println(Pattern.matches("[3-6]?", ""));
-		System.out.println(Pattern.matches("[3-6]?", "5"));
-		System.out.println(Pattern.matches("[1-9]+", ""));
-		System.out.println(Pattern.matches("[1-9]+", "9999"));
-		System.out.println(Pattern.matches("[ABCDF][+-]?", "A+"));
-		System.out.println(Pattern.matches("[1-9]*", "123"));
+		System.out.println(Pattern.matches("\\d{6}", "12345a")); // false
+		System.out.println(Pattern.matches("\\d{6,8}", "12345678")); // true
+		System.out.println(Pattern.matches("\\w{3,}", "ab")); // false
+		System.out.println(Pattern.matches("[3-6]?", "")); // true
+		System.out.println(Pattern.matches("[3-6]?", "5")); // true
+		System.out.println(Pattern.matches("[1-9]+", "")); // false
+		System.out.println(Pattern.matches("[1-9]+", "9999")); // true
+		System.out.println(Pattern.matches("[ABCDF][+-]?", "A+")); // true
+		System.out.println(Pattern.matches("[1-9]*", "123")); // true
 		
 		// 여태 배운 문법들을 소괄호로 묶어서 적용하는 것이 가능하다.
-		System.out.println(Pattern.matches("([ABCDF][+-]?){2,}", "A+F"));
+		System.out.println(Pattern.matches("([ABCDF][+-]?){2,}", "A+F")); // true
 		
 		// 연습 1 : 해당 문자열이 핸드폰 번호인지 검사할 수 있는 정규표현식을 만들어보세요.
-		System.out.println(Pattern.matches("010-?\\d{4}-?\\d{4}", "01053213382"));
-		System.out.println(Pattern.matches("010-?\\d{4}-?\\d{4}", "010-5321-3382"));
-		System.out.println(Pattern.matches("01[01679]-?\\d{3,4}-?\\d{4}", "011-774-3382"));
+		System.out.println(Pattern.matches("010-?\\d{4}-?\\d{4}", "01053213382")); // true
+		System.out.println(Pattern.matches("010-?\\d{4}-?\\d{4}", "010-5321-3382")); // true
+		System.out.println(Pattern.matches("01[01679]-?\\d{3,4}-?\\d{4}", "011-774-3382")); // true
 		
 		// 연습 2 : 해당 문자열이 이메일인지 검사할 수 있는 정규표현식을 만들어보세요.
-		System.out.println(Pattern.matches("[a-z]+\\d*@[a-z]+([.][a-z]+){1,2}", "ljs91420@daum.net"));
+		System.out.println(Pattern.matches("[a-z]+\\d*@[a-z]+([.][a-z]+){1,2}", "ljs91420@daum.net")); // true
 		
 		// 연습 3 : 해당 문자열이 IP주소인지 검사할 수 있는 정규표현식을 만들어보세요.(0.0.0.0 ~ 255.255.255.255)
-		System.out.println(Pattern.matches("[1-2]?[0-5]?[0-5]+[.][1-2]?[0-5]?[0-5]+[.][1-2]?[0-5]?[0-5]+[.][1-2]?[0-5]?[0-5]+", "19.19.19.19")); // 틀림
-		System.out.println(Pattern.matches("((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])[.]){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])", "10.199.255.0"));
+		System.out.println(Pattern.matches("((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])[.]){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])", "10.199.255.0")); // true
 		
 		String text = "apple/kiwi/banana/kiwi/mango/kiwi/kiwibird/kiwijuice/goldkiwi/redkiwi/redapple/greenapple";
 		
@@ -134,6 +133,6 @@ public class D11_Regex {
 		
 		// 연습 : 위의 text에서 apple을 모두 찾아 kiwi로 교체한 문자열을 생성해보세요.
 		String replaced = text.replaceAll("apple", "kiwi");
-		System.out.println(replaced);
+		System.out.println(replaced); // kiwi/kiwi/banana/kiwi/mango/kiwi/kiwibird/kiwijuice/goldkiwi/redkiwi/redkiwi/greenkiwi
 	}
 }

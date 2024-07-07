@@ -23,8 +23,6 @@ public class E09_SaveGame {
 		try (
 			FileOutputStream fout = new FileOutputStream("myfiles/rockPaperScissors");
 			DataOutputStream dout = new DataOutputStream(fout);
-			FileInputStream fin = new FileInputStream("myfiles/rockPaperScissors");
-			DataInputStream din = new DataInputStream(fin);
 		) {
 			while (true) {
 				com = (int)(Math.random() * 3);
@@ -65,8 +63,16 @@ public class E09_SaveGame {
 						dout.writeUTF("비김");
 					}
 				}
-				System.out.println(din.readUTF());
 			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		try (
+			FileInputStream fin = new FileInputStream("myfiles/rockPaperScissors");
+			DataInputStream din = new DataInputStream(fin);
+		) {
+			System.out.println(din.read());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

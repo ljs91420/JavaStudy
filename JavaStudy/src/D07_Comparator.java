@@ -23,7 +23,7 @@ public class D07_Comparator {
 		
 		Collections.addAll(nums, 88, 89, 90, 15, 10, 11, 12, 13, 1, 99);
 		
-		Collections.sort(nums);
+		Collections.sort(nums); // [1, 10, 11, 12, 13, 15, 88, 89, 90, 99]
 		
 		System.out.println(nums);
 		

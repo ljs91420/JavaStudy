@@ -8,13 +8,11 @@ public class BaseballGame {
 	int chance = 9;
 	
 	public BaseballGame() {
-		// TODO Auto-generated constructor stub
-		
-		genAns();
+		getAns();
 	}
 	
 	// 실행하면 새로운 정답으로 초기화되는 메소드
-	void genAns() {
+	void getAns() {
 		for (int i = 0; i < ans.length; ++i) {
 			ans[i] = (int)(Math.random() * 10);
 			
@@ -31,10 +29,10 @@ public class BaseballGame {
 		System.out.println("정답은 " + Arrays.toString(ans) + "입니다.");
 	}
 	
-	public BaseballGameResult guessNumber(int[] guessNum) {
-		int[] result = guessNumber(guessNum[0], guessNum[1], guessNum[2], guessNum[3]);
-		return new BaseballGameResult(result[0], result[1]);
-	}
+//	public BaseballGameResult guessNumber(int[] guessNum) {
+//		int[] result = guessNumber(guessNum[0], guessNum[1], guessNum[2], guessNum[3]);
+//		return new BaseballGameResult(result[0], result[1]);
+//	}
 	
 	public int[] guessNumber(int a, int b, int c, int d) {
 		int[] result = {0, 0};
@@ -76,7 +74,8 @@ public class BaseballGame {
 		return result;
 	}
 	
-	// chance라는 인스턴스 변수를 다른 클래스에서 함부로 수정하게 두기보다는 내가 정해놓은 방식으로만 움직일 수 있게 메소드에만 public을 달아두는 것이 좋다.
+	// chance라는 인스턴스 변수를 다른 클래스에서 함부로 수정하게 두기보다는 
+	// 내가 정해놓은 방식으로만 움직일 수 있게 메소드에만 public을 달아두는 것이 좋다.
 	public void minusChance() {
 		--this.chance;
 	}

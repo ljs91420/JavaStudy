@@ -47,6 +47,6 @@ public class D09_IsPhoneNumber {
 	
 	public static void main(String[] args) {
 		String ph = " 010-1234-1234";
-		System.out.println(isValidPhoneNumber(ph));
+		System.out.println(isValidPhoneNumber(ph)); // true
 	}
 }

@@ -39,7 +39,7 @@ public class ChatClient {
 			// 데이터 듣기 쓰레드 켜기 (서버에서부터 메세지를 받아오는 쓰레드)
 			new ListeningThread(s).start();
 			
-			System.out.println("서버에 연결되었습니다!");
+			System.out.println("서버에 연결되었습니다!"); // 서버에 연결되었습니다!
 			try (
 				InputStreamReader isr = new InputStreamReader(System.in);
 				BufferedReader in = new BufferedReader(isr);

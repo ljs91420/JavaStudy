@@ -22,7 +22,6 @@ public class Card {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return String.format("%c%s", SUITS[suit], RANKS[rank]);
 	}
 }

@@ -6,8 +6,6 @@ public class Player {
 	public int[] funds = new int[names.length];
 	
 	public Player() {
-		// TODO Auto-generated constructor stub
-		
 		
 	}
 }

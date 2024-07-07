@@ -30,7 +30,7 @@ public class D03_LinkedList {
 		// add(index, data) : 원하는 위치에 데이터 추가
 		fruits.add(3, "coconut");
 		
-		System.out.println(fruits);
+		System.out.println(fruits); // [watermelon, strawberry, apple, coconut, orange, mandarin, banana
 		
 		// remove() : 맨 앞의 데이터(head)를 지운다.
 		fruits.remove();
@@ -44,7 +44,7 @@ public class D03_LinkedList {
 		fruits.removeFirst();
 		fruits.removeLast();
 		
-		System.out.println(fruits);
+		System.out.println(fruits); // [orange]
 		
 		// ArrayList와 LinkedList는 모두 List 인터페이스 소속이기 때문에 List로 업캐스팅하여 활용한다.
 		List<String> list1 = new LinkedList<>();
@@ -66,8 +66,8 @@ public class D03_LinkedList {
 		String[] arr = list1.toArray(new String[list1.size()]);
 		Object[] arr2 = list1.toArray();
 		
-		System.out.println(Arrays.toString(str));
-		System.out.println(Arrays.toString(arr2));
+		System.out.println(Arrays.toString(str)); // [무궁화호, 새마을호, 통일호]
+		System.out.println(Arrays.toString(arr2)); // [무궁화호, 새마을호, 통일호]
 		
 		// 업캐스팅된 상태이기 때문에 LinkedList만의 메서드는 사용할 수 없는 상태
 		// list1.addFirst(); // 불가능

@@ -23,14 +23,12 @@ public class C05_PirateGame {
 			5. 각 게임이 끝날 때 순위에 따라 소지금이 변동된다.
 			   (1위 +1000, 2위 +500, 3위 -500, 4위 -1000))
 			
-			6. 게임을 그만하겠다고 하거나 한 사람의 소지금이 -가 된다면 게임이 종료된다.
+			6. 게임을 그만하겠다고 하거나 한 사람의 점수가 -가 된다면 게임이 종료된다.
 			   게임이 종료되면서 최종 스코어를 출력한다.
 			   (이름, 점수, 남은 소지금(+얼마 벌었나) 등)
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		Scanner sc = new Scanner(System.in);
 		
 		int[] losePoints = new int[4];

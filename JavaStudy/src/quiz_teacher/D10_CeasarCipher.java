@@ -61,9 +61,9 @@ public class D10_CeasarCipher {
 		int key = 10;
 		
 		String encrypted = cipher1.encrypt("한글, abc, 123.", key);
-		System.out.println("암호화 결과: " + encrypted);
+		System.out.println("암호화 결과: " + encrypted); // 암호화 결과: 한글I"klmI"@#$J
 		
 		String decrypted = cipher1.decrypt(encrypted, key);
-		System.out.println("복호화 결과: " + decrypted);
+		System.out.println("복호화 결과: " + decrypted); // 한글, abc, 123.
 	}
 }

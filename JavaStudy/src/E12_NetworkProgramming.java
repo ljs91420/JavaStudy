@@ -38,16 +38,16 @@ public class E12_NetworkProgramming {
 			// 소켓도 close()가 필요한 클래스이다.
 			ServerSocket ss = new ServerSocket(9090);
 		) {
-			System.out.println("우리 서버의 IP주소: " + ss.getInetAddress());
-			System.out.println("우리 서버의 포트번호: " + ss.getLocalPort());
+			System.out.println("우리 서버의 IP주소: " + ss.getInetAddress()); // 우리 서버의 IP주소: 0.0.0.0/0.0.0.0
+			System.out.println("우리 서버의 포트번호: " + ss.getLocalPort()); // 우리 서버의 포트번호: 9090
 			
-			int count = 0;
 			while (true) {
 				// 다른 소켓이 연결될 때까지 프로그램을 멈추고 기다린다.
 				// 연결되고 나면 연결 정보를 담은 소켓을 리턴한다.
-				System.out.println("다음 연결을 기다리는 중...");
+				System.out.println("다음 연결을 기다리는 중..."); // 다음 연결을 기다리는 중...
 				Socket s = ss.accept();
 				
+				int count = 0;
 				// 연결된 상대방(클라이언트)에게 데이터를 보낼 수 있는 통로를 꺼내온다.
 				try (
 					PrintStream out = new PrintStream(s.getOutputStream());	

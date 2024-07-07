@@ -24,6 +24,6 @@ public class Rate {
 			}
 		}
 		System.out.printf("확률 %.0f%%짜리 경품 당첨된 횟수: %d\n", 
-				5.0 / prizeWin.length * 100, winCount);
+				5 / (double)prizeWin.length * 100, winCount);
 	}
 }

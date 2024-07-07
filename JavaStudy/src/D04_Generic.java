@@ -21,12 +21,12 @@ public class D04_Generic {
 		
 		instance1.setValue(8080);
 		
-		System.out.println(instance1.getValue());
+		System.out.println(instance1.getValue()); // 8080
 		
 		GenericClass<String> instance2 = new GenericClass<>();
 		
 		instance2.setValue("Cow");
-		System.out.println(instance2.getValue());
+		System.out.println(instance2.getValue()); // Cow
 		
 		JiphapTools<String> tools = new JiphapTools<>();
 		
@@ -38,7 +38,7 @@ public class D04_Generic {
 		
 		Set<String> unionResult = tools.union(cars, animals);
 		
-		System.out.println(unionResult);
+		System.out.println(unionResult); // [호랑이, 곰, 돼지, 마티즈, 스타렉스, 소나타, K5, 사자]
 	}
 }
 

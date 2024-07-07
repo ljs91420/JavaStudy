@@ -22,8 +22,6 @@ public class C02_OOP {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		// Book이라는 설계도를 통해 실체(인스턴스)를 찍어내야 사용할 수 있다.
 		// new를 통해 인스턴스를 찍어낼 때마다 메모리상에 필요한 만큼의 공간을 확보한다.
 		Book b1 = new Book();
@@ -46,9 +44,9 @@ public class C02_OOP {
 		}
 		
 		// 찍어낸 실체마다 변수의 현재 상태가 다르다.
-		System.out.println("책1의 현재 페이지: " + b1.currentPage);
-		System.out.println("책2의 현재 페이지: " + b2.currentPage);
-		System.out.println("책3의 현재 페이지: " + b3.currentPage);
+		System.out.println("책1의 현재 페이지: " + b1.currentPage); // 책1의 현재 페이지: 200
+		System.out.println("책2의 현재 페이지: " + b2.currentPage); // 책2의 현재 페이지: 13
+		System.out.println("책3의 현재 페이지: " + b3.currentPage); // 책3의 현재 페이지: 0
 		
 		Animal tiger = new Animal();
 	

@@ -30,8 +30,8 @@ public class C13_AbstractClass {
 		potato.grow();
 		potato.grow();
 		
-		System.out.println(potato.harvest() + "개를 수확했습니다!");
-		System.out.println(potato.harvest() + "개를 수확했습니다!");
+		System.out.println(potato.harvest() + "개를 수확했습니다!"); // 9개를 수확했습니다!
+		System.out.println(potato.harvest() + "개를 수확했습니다!"); // 0개를 수확했습니다!
 		
 		Potato potato2 = new Potato();
 		
@@ -39,7 +39,7 @@ public class C13_AbstractClass {
 		potato2.grow();
 		potato2.grow();
 		
-		harvest(potato2);
+		harvest(potato2); // 감자를 9개 수확했습니다!
 		harvest(new Crop() {
 			// 인스턴스 블록 - 생성자보다 먼저 실행되는 코드
 			{
@@ -52,7 +52,7 @@ public class C13_AbstractClass {
 			void grow() {
 				qty += 2;
 			}
-		});
+		}); // 고구마를 4개 수확했습니다!
 	}
 }
 

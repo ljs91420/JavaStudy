@@ -29,7 +29,7 @@ public class D13_GraduateDay {
 			}
 			
 			// 공휴일이면 공부한 날이 증가하지 않음
-			if (KoreanHolidays.isHoliday(cal)) {
+			if (KoreanHolidays.checkHoliday(cal)) {
 				System.out.printf("%s는 쉬는 날입니다.(공휴일)\n", dateStr);
 				continue;
 			}

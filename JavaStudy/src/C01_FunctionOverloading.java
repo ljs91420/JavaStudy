@@ -29,12 +29,10 @@ public class C01_FunctionOverloading {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		C00_Function.rabbit();
 		
-		System.out.println(add(5));
-		System.out.println(add(3, 3));
+		System.out.println(add(5)); // 15
+		System.out.println(add(3, 3)); // 6
 	}
 
 }

@@ -45,15 +45,15 @@ public class C09_AccessModifier extends myobj.C09_AccessModifierTest {
 		num = test1.a2; // protected
 		num = test1.a3; // default
 		
-		test1.method1(); // public
-		test1.method2(); // protected
-		test1.method3(); // default
+		test1.method1(); // public // 123
+		test1.method2(); // protected // 123
+		test1.method3(); // default // 123
 		
 		// 다른 패키지에 존재하는 클래스를 불러 사용하는 경우(public만 쓸 수 있다.)
 		myobj.C09_AccessModifierTest test2 = new myobj.C09_AccessModifierTest();
 		
 		num = test2.a1; // public
 		
-		test2.method1(); // public
+		test2.method1(); // public // 123
 	}
 }

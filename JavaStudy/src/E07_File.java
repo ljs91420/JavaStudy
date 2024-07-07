@@ -26,19 +26,19 @@ public class E07_File {
 		
 		// canRead(), canWrite(), canExecute()
 		// 해당 파일의 권한을 확인할 수 있다.
-		System.out.println(f1.canRead());
-		System.out.println(f1.canWrite());
-		System.out.println(f1.canExecute());
+		System.out.println(f1.canRead()); // true
+		System.out.println(f1.canWrite()); // true
+		System.out.println(f1.canExecute()); // true
 		
 		// getAbsolutePath() : 해당 파일의 절대 경로를 알아낼 수 있다.
 		System.out.println(f1.getAbsolutePath());
 		
 		// isFile(), isDirectory() : 해당 인스턴스가 파일인지 폴더인지 알아낼 수 있다.
-		System.out.println(f1.isFile());
-		System.out.println(f4.isFile());
+		System.out.println(f1.isFile()); // true
+		System.out.println(f4.isFile()); // false
 		
-		System.out.println(f1.isDirectory());
-		System.out.println(f4.isDirectory());
+		System.out.println(f1.isDirectory()); // false
+		System.out.println(f4.isDirectory()); // true
 		
 		/*
 			절대 경로 : 최초의 위치부터 모든 것을 다 적어놓은 경로
@@ -55,8 +55,8 @@ public class E07_File {
 		File ff2 = new File("myfiles/emails.txt");
 		
 		// isAbsolute() : 절대경로인지 여부를 확인
-		System.out.println(ff1.isAbsolute());
-		System.out.println(ff2.isAbsolute());
+		System.out.println(ff1.isAbsolute()); // true
+		System.out.println(ff2.isAbsolute()); // false
 		
 		File ff3 = new File("./myimages");
 		File ff4 = new File("./mymusic/rock/");
@@ -85,7 +85,7 @@ public class E07_File {
 			System.out.println(childFile.getAbsolutePath());
 		}
 		
-		System.out.println("파일의 리스트를 보는 경우: " + fff2.list());
+		System.out.println("파일의 리스트를 보는 경우: " + fff2.list()); // 파일의 리스트를 보는 경우: null
 		
 		// listFiles() : 폴더 안의 모든 내용을 File[]로 꺼내준다.
 		File[] files = fff1.listFiles();

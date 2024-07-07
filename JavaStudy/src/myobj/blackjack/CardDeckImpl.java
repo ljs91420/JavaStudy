@@ -21,13 +21,11 @@ public class CardDeckImpl implements CardDeck {
 	
 	@Override
 	public void shuffle() {
-		// TODO Auto-generated method stub
 		Collections.shuffle(cards);
 	}
 	
 	@Override
 	public Card draw() {
-		// TODO Auto-generated method stub
 		// list.remove() : 비어있을 때 에러 발생 (예외처리 방식으로 해결 가능)
 		// list.pollFirst() : 비어있으면 null을 리턴 (if문으로 해결 가능)
 		// 외워서 해결하는 것이 아니라 메서드에 대한 주석을 읽어보고 알아야 한다.

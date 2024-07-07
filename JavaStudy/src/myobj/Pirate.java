@@ -6,8 +6,6 @@ public class Pirate {
 	Player player = new Player();
 	
 	public Pirate() {
-		// TODO Auto-generated constructor stub
-		
 		
 	}
 	

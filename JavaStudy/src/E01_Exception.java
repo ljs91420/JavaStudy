@@ -39,7 +39,7 @@ public class E01_Exception {
 		
 		// 스택(프로그램에서 함수 호출 순서를 기억하기 위한 자료구조)
 		try {
-			System.out.println(plus(10));
+			System.out.println(plus(10)); // 3
 		} catch (ArithmeticException e) {
 			e.printStackTrace();
 		}

@@ -28,8 +28,8 @@ public class D10_CaesarCipher {
 	// ※ 사용할 수 있는 문자의 종류 : 영어 대문자, 영어 소문자, 숫자, 특수문자
 	
 	public static void main(String[] args) {
-		System.out.println(encrypt("HELLO!", 3));
-		System.out.println(decrypt("KHOOR$", 3));
+		System.out.println(encrypt("HELLO!", 3)); // KHOOR$
+		System.out.println(decrypt("KHOOR$", 3)); // HELLO!
 	}
 	
 	static String encrypt(String plaintext, int key) {

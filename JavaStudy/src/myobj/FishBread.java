@@ -10,8 +10,6 @@ public class FishBread {
 	char quality;
 	
 	public FishBread() {
-		// TODO Auto-generated constructor stub
-		
 		int randomTaste = (int)(Math.random() * 3);
 		
 		switch (randomTaste) {

@@ -44,7 +44,7 @@ public class C11_LocalInnerClass {
 		stu.eng = 100;
 		stu.math = 90;
 		
-		System.out.println(stu.getTotal());
+		System.out.println(stu.getTotal()); // 290
 		
 		// 상속과 업캐스팅을 활용하면 다른 곳에서도 활용할 수 있게 된다.
 		class HistoryBook extends Book {
@@ -90,7 +90,7 @@ public class C11_LocalInnerClass {
 		doSomething2(new Book() {
 			@Override
 			public void print() {
-				System.out.println("Book을 상속받아서 기능을 마음대로 고쳐썼지만"
+				System.out.println("Book을 상속받아서 기능을 마음대로 고쳐썼지만 "
 						+ "이 클래스의 이름이 무엇인지는 모릅니다.");
 			}
 		});

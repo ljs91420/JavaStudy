@@ -20,11 +20,11 @@ public class D09_IsPhoneNumber {
 	}
 	
 	static boolean checkPhoneNumber(String str) {
-		String[] strArr = str.split("-");
-		for (String e : strArr) {
-			
-		}
+		int middleNumbers = Integer.valueOf(str.substring(4, 8));
+		int lastNumbers = Integer.valueOf(str.substring(9));
 		
-		return str.length() == 13 && str.startsWith("010") && str.substring(3, 4).equals("-") && str.substring(8, 9).equals("-");
+		return str.length() == 13 && str.startsWith("010") && str.substring(3, 4).equals("-") 
+				&& middleNumbers >= 1000 && middleNumbers <= 9999 && lastNumbers >= 1000 && lastNumbers <= 9999 
+				&& str.substring(8, 9).equals("-");
 	}
 }

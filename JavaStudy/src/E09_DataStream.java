@@ -32,12 +32,12 @@ public class E09_DataStream {
 			FileInputStream fin = new FileInputStream("myfiles/data.abc");
 			DataInputStream din = new DataInputStream(fin);
 		) {
-			System.out.println("처음 썼던 int값: " + din.readInt());
-			System.out.println("두번째로 썼던 double값: " + din.readDouble());
-			System.out.println("세번째로 썼던 float값: " + din.readFloat());
-			System.out.println("네번째로 썼던 byte값: " + din.readByte());
-			System.out.println("다섯번째로 썼던 short값: " + din.readShort());
-			System.out.println("마지막 문자열: " + din.readUTF());
+			System.out.println("처음 썼던 int값: " + din.readInt()); // 처음 썼던 int값: 10000000
+			System.out.println("두번째로 썼던 double값: " + din.readDouble()); // 두번째로 썼던 double값: 123.123
+			System.out.println("세번째로 썼던 float값: " + din.readFloat()); // 세번째로 썼던 float값: 123.1234
+			System.out.println("네번째로 썼던 byte값: " + din.readByte()); // 네번째로 썼던 byte값: 123
+			System.out.println("다섯번째로 썼던 short값: " + din.readShort()); // 다섯번째로 썼던 short값: 20000
+			System.out.println("마지막 문자열: " + din.readUTF()); // 마지막 문자열: 문자열!!
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

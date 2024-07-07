@@ -70,11 +70,11 @@ public class D14_DateTime {
 		System.out.println(dow.getDisplayName(TextStyle.FULL, Locale.JAPANESE));
 		
 		// 7가지 요일 인스턴스는 DayOfWeek 클래스의 상수로 만들어져 있다.
-		System.out.println(DayOfWeek.MONDAY);
-		System.out.println(DayOfWeek.TUESDAY);
-		System.out.println(DayOfWeek.WEDNESDAY);
-		System.out.println(DayOfWeek.THURSDAY);
-		System.out.println(DayOfWeek.FRIDAY.getDisplayName(TextStyle.FULL, Locale.FRENCH));
+		System.out.println(DayOfWeek.MONDAY); // MONDAY
+		System.out.println(DayOfWeek.TUESDAY); // TUESDAY
+		System.out.println(DayOfWeek.WEDNESDAY); // WEDNESDAY
+		System.out.println(DayOfWeek.THURSDAY); // THURSDAY
+		System.out.println(DayOfWeek.FRIDAY.getDisplayName(TextStyle.FULL, Locale.FRENCH)); // vendredi
 		
 		// getMonth()를 할 때도 Month 클래스 인스턴스를 반환한다.
 		System.out.println(now_dt.getMonth());
@@ -88,23 +88,23 @@ public class D14_DateTime {
 		LocalDate date1 = LocalDate.of(2001, 5, 13);
 		LocalTime time1 = LocalTime.of(14, 36);
 		
-		System.out.println(date1);
-		System.out.println(time1);
-		System.out.println(LocalDateTime.of(date1, time1));
+		System.out.println(date1); // 2001-05-13
+		System.out.println(time1); // 14:36
+		System.out.println(LocalDateTime.of(date1, time1)); // 2001-05-13T14:36
 		
 		// with() : 해당 인스턴스의 특정 필드를 수정한 인스턴스를 반환한다.
 		LocalDate date2 = date1.withMonth(7);
 		LocalDate date3 = date1.plusMonths(7);
 		
-		System.out.println(date2);
-		System.out.println(date3);
+		System.out.println(date2); // 2001-07-13
+		System.out.println(date3); // 2001-12-13
 		
 		// 시간의 단위(TemporalField)는 ChronoField 클래스에 상수로 정의되어 있다.
 		LocalTime time2 = time1.with(ChronoField.HOUR_OF_DAY, 20);
 		LocalTime time3 = time1.withHour(20);
 		
-		System.out.println(time2);
-		System.out.println(time3);
+		System.out.println(time2); // 20:36
+		System.out.println(time3); // 20:36
 		
 		// now(ZoneId) : 다른 국가의 날짜 및 시간을 확인할 때 사용한다.
 		LocalDateTime usdt = LocalDateTime.now(ZoneId.of("America/Los_Angeles"));
@@ -126,13 +126,13 @@ public class D14_DateTime {
 		
 		LocalDate lastDayOfMay = childrensDay.withDayOfMonth(31);
 		
-		System.out.println(childrensDay);
-		System.out.println(lastDayOfMay);
+		System.out.println(childrensDay); // 2024-05-05
+		System.out.println(lastDayOfMay); // 2024-05-31
 		
 		// with 메서드와 함께 TemporalAdjusters의 여러 시간조절기들을 꺼내쓸 수 있다.
-		System.out.println("어린이날이 포함된 달의 마지막 날: " + childrensDay.with(TemporalAdjusters.lastDayOfMonth()));
+		System.out.println("어린이날이 포함된 달의 마지막 날: " + childrensDay.with(TemporalAdjusters.lastDayOfMonth())); // 2024-05-31
 		
-		System.out.println("어린이날 다음 달의 마지막 날짜: " + childrensDay.plusMonths(1).with(TemporalAdjusters.lastDayOfMonth()));
+		System.out.println("어린이날 다음 달의 마지막 날짜: " + childrensDay.plusMonths(1).with(TemporalAdjusters.lastDayOfMonth())); // 2024-06-30
 		
 		System.out.println("저번주 수요일 인스턴스: " + LocalDate.now().with(TemporalAdjusters.previous(DayOfWeek.WEDNESDAY)));
 		

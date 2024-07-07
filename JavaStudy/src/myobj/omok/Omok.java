@@ -64,7 +64,6 @@ public class Omok {
 		}
 		
 		count = 0;
-		
 		// 세로로 연속으로 놓여있는 돌의 개수를 세기
 		for (int i = y; i < BOARD_HEIGHT; ++i) {
 			if (board[i][x] == stone) {
@@ -86,8 +85,47 @@ public class Omok {
 			return 1;
 		}
 		
-		// 대각선 (과제)
+		count = 0;
+		for (int i = x; i < BOARD_WIDTH; ++i) {
+			if (board[i][i] == stone) {
+				++count;
+			} else {
+				break;
+			}
+		}
 		
+		for (int i = x - 1; i >= 0; --i) {
+			if (board[i][i] == stone) {
+				++count;
+			} else {
+				break;
+			}
+		}
+		
+		if (count == 5) {
+			return 1;
+		}
+		
+		count = 0;
+		for (int i = x; i < BOARD_WIDTH; ++i) {
+			if (board[y - i][x + i] == stone) {
+				++count;
+			} else {
+				break;
+			}
+		}
+		
+		for (int i = x - 1; i >= 0; --i) {
+			if (board[y + i][x - i] == stone) {
+				++count;
+			} else {
+				break;
+			}
+		}
+		
+		if (count == 5) {
+			return 1;
+		}		
 		
 		return 0; // 아무것도 아님
 	}

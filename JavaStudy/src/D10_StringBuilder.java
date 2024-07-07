@@ -44,39 +44,39 @@ public class D10_StringBuilder {
 		
 		// append(data) : 뒤에 데이터 추가
 		sb2.append("/orange");
-		System.out.println(sb2);
+		System.out.println(sb2); // apple/orange
 		
 		// insert(offset, data) : 원하는 곳에 데이터 추가
 		sb2.insert(0, "pine");
-		System.out.println(sb2);
+		System.out.println(sb2); // pineapple/orange
 		
 		// delete(start, end) : 원하는 만큼 문자 삭제
 		sb2.delete(4, 9);
-		System.out.println(sb2);
+		System.out.println(sb2); // pine/orange
 		
 		// replace(start, end, String) : 원하는 문자열 교체
 		sb2.replace(0, 4, "grape");
-		System.out.println(sb2);
+		System.out.println(sb2); // grape/orange
 		
 		// substring(start, end) : 원하는 위치의 문자열을 자른 인스턴스를 반환
 		// substring(start) : 해당 위치부터 마지막까지...
 		String sub = sb2.substring(6, 10);
 		String sub2 = sb2.substring(6);
-		System.out.println(sub);
-		System.out.println(sub2);
-		System.out.println("원본은 substring 후에도 유지된다: " + sb2);
+		System.out.println(sub); // oran
+		System.out.println(sub2); // orange
+		System.out.println("원본은 substring 후에도 유지된다: " + sb2); // 원본은 substring 후에도 유지된다: grape/orange
 		
 		// reverse() : 뒤집는다.
 		sb2.reverse();
-		System.out.println(sb2);
+		System.out.println(sb2); // egnaro/eparg
 		sb2.reverse();
 		
 		// setCharAt(index, ch) : 한 글자를 수정할 수 있다.
 		sb2.setCharAt(0, 'G');
-		System.out.println(sb2);
+		System.out.println(sb2); // Grape/orange
 		
 		// indexOf(str) : 찾은 문자열의 위치를 반환한다(못 찾으면 -1 반환)
 		sb2.setCharAt(sb2.indexOf("o"), 'O');
-		System.out.println(sb2);
+		System.out.println(sb2); // Grape/Orange
 	}
 }
